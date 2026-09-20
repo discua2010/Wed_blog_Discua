@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Discua</title>
+    <link rel="stylesheet" href="controlador.css"/>
+</head>
+<body>
+    <div id="detras">
+
+        <video id="miVideo" autoplay loop muted playsinline></video>
+
+        <div id="ensima">
+            <h1 class="1">Blog Discua</h1>
+            <h2 class="2">De mi sale decir que esto es para ustedes</h2>
+            <hr>
+            <p>Descripcion: aqui se pondran mis proyectos de los videos, modelos 3D, 
+los archivos de Blender, etc. Ojo, solo se añadiran cosas como modelos o musicas solo hechas por mi.</p>
+            <hr>
+            <h3 class="3">Mi ultimo proyecto</h3>
+            <p>Descripcion: estas son fotos de una segunda animacion que se hizo para promocionar a la principal.</p>
+            <img src="fotos blender/0001.png" width="50%" >
+            <img src="fotos blender/0113.png" width="50%" >
+            <img src="fotos blender/0809.png" width="50%" >
+            <img src="fotos blender/0901.png" width="50%" >
+            
+            <br>
+            <br>
+            <h3 class="3">Poster promocional de mi ultimo proyecto</h3>
+            <p>Descripcion: este proyecto espero poderlo terminar este 7 de noviembre.</p>
+            <img src="fotos blender/POSTER1.png" width="50%" >
+            
+            <br>
+            <br>
+            <h3>Este es el primer proyecto que si se hizo en 3D
+                o al menos el primero que muestro en publico</h3>
+            <p>Descripcion: no es perfecto pero es humilde, es el poster.</p>
+            <img src="fotos blender/promosion.png" width="50%" >
+            
+            <br>
+            <br>
+            <h3>Otras fotos Discua</h3>
+            <p>Descripcion: fotos que hice y que solo 2 estan publicas en los 2 canales.</p>
+            <img src="fotos blender/foto20.png" width="50%" >
+            <img src="fotos blender/foto3.png" width="50%" >
+            <img src="fotos blender/foto13.png" width="50%" >
+            <hr>
+            <h2>Mas cositas</h2>
+            <a href="pagina2.html">Fotos</a>
+            <br>
+            <a href="nolisto.html">Proyectos</a>
+            <br>
+            <a href="pagina3.html">Videos</a>
+        </div>
+        
+    </div>
+
+    <script>
+      const video = document.getElementById('miVideo');
+      
+      const esMovil = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (esMovil) {
+          video.src = "video/video2.mp4";
+      } else {
+          video.src = "video/video.mp4";
+      }
+
+      document.addEventListener('click', () => {
+        video.muted = false;
+      }, { once: true });
+    </script>
+</body>
+</html>
+

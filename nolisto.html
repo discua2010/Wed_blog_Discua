@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Discua</title>
+    <link rel="stylesheet" href="controlador.css"/>
+</head>
+<body>
+    <div id="detras">
+
+        <video id="miVideo" autoplay loop muted playsinline></video>
+
+        <div id="ensima">
+            <h1>Blog Discua</h1>
+            <h2>Todo</h2>
+            <a href="pagina4.html">Ver antes de tiempo</a>
+            <hr>
+            <p>Lo siento, aun lo estamos construyendo ¯\_(ツ)_/¯ </p>
+            <br>
+            <hr>
+            <h2>Mas cositas</h2>
+            <a href="index.html">Regresar</a>
+            
+        </div>
+        
+    </div>
+
+    <script>
+      const video = document.getElementById('miVideo');
+      
+      const esMovil = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (esMovil) {
+          video.src = "video/video2.mp4";
+      } else {
+          video.src = "video/video.mp4";
+      }
+
+      document.addEventListener('click', () => {
+        video.muted = false;
+      }, { once: true });
+    </script>
+</body>
+</html>
+

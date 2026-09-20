@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Discua</title>
+    <link rel="stylesheet" href="controlador.css"/>
+</head>
+<body>
+    <div id="detras">
+
+        <video id="miVideo" autoplay loop muted playsinline></video>
+
+        <div id="ensima">
+            <h1>Blog Discua</h1>
+            <h2>Fotos de los proyectos</h2>
+            <hr>
+            <p>Estas son todas las fotos que hay 100% hechas por humanos.</p>
+            <br>
+            <img src="fotos blender/0901.png" width="50%" >
+            <br>
+            <a href="fotos blender/0901.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/0809.png" width="50%" >
+            <br>
+            <a href="fotos blender/0809.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/0001.png" width="50%" > 
+            <br>
+            <a href="fotos blender/0001.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/0113.png" width="50%" >
+            <br>
+            <a href="fotos blender/0113.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/POSTER1.png" width="50%" >
+            <br>
+            <a href="fotos blender/POSTER1.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/promosion.png" width="50%" >
+            <br>
+            <a href="fotos blender/promosion.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/foto20.png" width="50%" >
+            <br>
+            <a href="fotos blender/foto20.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/foto3.png" width="50%" >
+            <br>
+            <a href="fotos blender/foto3.png" download>Descargar</a>
+            <br>
+            <br>
+            <img src="fotos blender/foto13.png" width="50%" >
+            <br>
+            <a href="fotos blender/foto13.png" download>Descargar</a>
+            <hr>
+            <h2>Mas cositas</h2>
+            <a href="index.html">Regresar</a>
+            
+        </div>
+        
+    </div>
+
+    <script>
+      const video = document.getElementById('miVideo');
+      
+      const esMovil = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (esMovil) {
+          video.src = "video/video2.mp4";
+      } else {
+          video.src = "video/video.mp4";
+      }
+
+      document.addEventListener('click', () => {
+        video.muted = false;
+      }, { once: true });
+    </script>
+</body>
+</html>
+

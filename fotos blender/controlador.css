@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: wheat;
+    background-color: #000000;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+/* El video se fija a la pantalla independientemente del contenedor */
+#miVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none; /* Permite deslizar con el dedo en celular sin atrancarse */
+}
+
+/* El contenedor padre ya no limita la altura ni esconde el contenido */
+#detras {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Tu texto e imágenes flotan arriba y crecen todo lo necesario */
+#ensima {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    width: 100%;
+}

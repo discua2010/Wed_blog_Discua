@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>blop Discua</title>
+    <link rel="stylesheet" href="controlador.css"/>
+</head>
+<body>
+    <div id="detras">
+
+        <video id="miVideo" autoplay loop muted playsinline></video>
+
+        <div id="ensima">
+            <h1>blop discua</h1>
+            <h2>videos delos prollectos</h2>
+            <hr>
+            <p>estas son todas las fotos que ay</p>
+            <img src="0001.png" width="50%" >
+            <img src="0113.png" width="50%" >
+            <img src="POSTER1.png" width="50%" >
+            <img src="promosion.png" width="50%" >
+            <img src="foto20.png" width="50%" >
+            <img src="foto3.png" width="50%" >
+            <img src="foto13.png" width="50%" >
+            <hr>
+            <h2> mas cositas</h2>
+            <a href="index.html">regresar</a>
+            
+        </div>
+        
+    </div>
+
+    <script>
+      const video = document.getElementById('miVideo');
+      
+      const esMovil = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (esMovil) {
+          video.src = "video/video2.mp4";
+      } else {
+          video.src = "video/video.mp4";
+      }
+
+      document.addEventListener('click', () => {
+        video.muted = false;
+      }, { once: true });
+    </script>
+</body>
+</html>
